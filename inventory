@@ -1,3 +1,5 @@
-[practice]
-#node1
+[local]
 controller
+
+[practice]
+nodea

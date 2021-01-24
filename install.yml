@@ -1,8 +1,8 @@
 ---
-- name: install rdesktop
+- name: install httpd
   hosts: all
   tasks:
-    - name: install rdesktop
+    - name: install htpd
       yum:
-        name: rdesktop
+        name: httpd
         state: latest 
