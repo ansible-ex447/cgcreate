@@ -1,5 +1,6 @@
 ---
 - name: Create cgroup
-  hosts: controller
-  become: no
+  hosts: localhost
+  become: yes
   tasks:
+    - shell: cgcreate -a root:root -t root:root -g cpuacct,memory,pids:ex447_stats
