@@ -1,6 +1,5 @@
 ---
-- name: Create cgroup
+- name: playbbook for cggroup
   hosts: localhost
-  become: yes
   tasks:
-    - shell: cgcreate -a root:root -t root:root -g cpuacct,memory,pids:ex447_stats
+    - shell: cgcreate -a "root:root" -t "root:root" -g "cpuacct,memory,pids:ex447_stats"
