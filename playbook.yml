@@ -1,5 +1,2 @@
 ---
  - name: Cg Group creation 
-   hosts: localhost
-   tasks:
-     - shell: cgcreate -a "root:root" -t "root:root" -g "cpuacct,memory,pids:ex447_stats"
